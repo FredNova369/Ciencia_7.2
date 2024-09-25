@@ -17,6 +17,28 @@
   <p> (1234 n é senha fdp)</p>
   <input type="submit" value="mete">
 </form> 
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+<p id="hora">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 22) {
+  document.getElementById("hora").innerHTML = "Aula de Viadagem!";
+}
+</script>
+<p id="Aula7"></p>
+<script>
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 18) {
+      greeting = "Good day";
+    } else greeting = "Good evening";
+ 
+    document.getElementById("Aula7").innerHTML = greeting;
+    </script>
+    ​
+
 ​   
 </body>
 </html>
